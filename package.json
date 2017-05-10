@@ -1,0 +1,23 @@
+{
+  "name": "koa-barebones-boilerplate",
+  "version": "0.1.0",
+  "engine": {
+    "node": "7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "dotenv": "^4.0.0",
+    "knex": "^0.12.7",
+    "koa": "^2.1.0",
+    "koa-bodyparser": "^4.1.0",
+    "koa-router": "^7.0.1"
+  },
+  "scripts": {
+    "server": "nodemon --watch http --exec babel-node -- http/server.js",
+    "server:prod": "babel-node http/server.js"
+  }
+}
